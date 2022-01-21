@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: "Poppins", sans-serif;
+  /* font-family: 'Shadows Into Light', cursive; */
+  border: solid black;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  background-image: url("/images/header.jpg");
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Bebas Neue", cursive;
+}
+
+.menu {
+  color: white;
+  display: flex;
+  /* row */
+  /* flex-direction: row-reverse; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 100px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+.menu ul li {
+  margin-right: 1.5rem;
+}
+
+.menu ul li:last-of-type {
+  margin-right: 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.text_wrapper {
+  z-index: 1;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.text_wrapper h1 {
+  font-size: 4rem;
+}
+
+.text_wrapper span {
+  font-size: 2rem;
+}
+
+/* Image 1 */
+
+.card__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 250px;
+  max-width: 465px;
+  padding: 2rem;
+}
+
+.card__container a {
+  position: relative;
+  left: 5rem;
+  width: 75%;
+  min-height: 190.2px;
+  border-radius: 100%;
+  overflow: hidden;
+  background-image: url("/images/churches.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 1s ease;
+  margin-right: 2rem;
+}
+
+.card__container:hover a {
+  left: 0;
+  transform: rotate(-50deg);
+}
+
+.card__container:hover a::before {
+  content: url("/icons/play-circle.svg");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* transition: rotate(0deg); */
+}
+
+.card__container .card__body {
+  position: relative;
+  top: 60px;
+  width: 70%;
+  height: 100%;
+  min-height: 150px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.card__container:hover .card__body {
+  top: 0px;
+}
+
+.card__container .card__body h2 {
+  margin-bottom: 1rem;
+}
+
+.card__container .card__body span {
+  opacity: 0;
+  transition: all 0.5s ease;
+  line-height: 1.4rem;
+}
+
+.card__container:hover span {
+  opacity: 1;
+  visibility: visible;
+  font-family: "Shadows Into Light", cursive;
+}
+/* Image 2 */
+.card__container_two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 250px;
+  max-width: 465px;
+  padding: 2rem;
+}
+
+.card__container_two a {
+  position: relative;
+  left: 5rem;
+  width: 75%;
+  min-height: 190.2px;
+  border-radius: 100%;
+  overflow: hidden;
+  background-image: url("/images/heart.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 1s ease;
+  margin-right: 2rem;
+}
+
+.card__container_two:hover a {
+  left: 0;
+  transform: rotate(-50deg);
+}
+
+.card__container_two:hover a::before {
+  content: url("/icons/play-circle.svg");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* transition: rotate(0deg); */
+}
+
+.card__container_two .card__body_two {
+  position: relative;
+  top: 60px;
+  width: 70%;
+  height: 100%;
+  min-height: 150px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.card__container_two:hover .card__body_two {
+  top: 0px;
+}
+
+.card__container_two .card__body_two h2 {
+  margin-bottom: 1rem;
+}
+
+.card__container_two .card__body_two span {
+  opacity: 0;
+  transition: all 0.5s ease;
+  line-height: 1.4rem;
+}
+
+.card__container_two:hover span {
+  opacity: 1;
+  visibility: visible;
+  font-family: "Shadows Into Light", cursive;
+}
+
+/* Image 3 */
+
+.card__container_three {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 250px;
+  max-width: 465px;
+  padding: 2rem;
+}
+
+.card__container_three a {
+  position: relative;
+  left: 5rem;
+  width: 75%;
+  min-height: 190.2px;
+  border-radius: 100%;
+  overflow: hidden;
+  background-image: url("/images/lost.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 1s ease;
+  margin-right: 2rem;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.card__container_three:hover a {
+  left: 0;
+  transform: rotate(-50deg);
+}
+
+.card__container_three:hover a::before {
+  content: url("/icons/play-circle.svg");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* transition: rotate(0deg); */
+}
+
+.card__container_three .card__body_three {
+  position: relative;
+  top: 60px;
+  width: 70%;
+  height: 100%;
+  min-height: 150px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.card__container_three:hover .card__body_three {
+  top: 0px;
+}
+
+.card__container_three .card__body_three h2 {
+  margin-bottom: 1rem;
+}
+
+.card__container_three .card__body_three span {
+  opacity: 0;
+  transition: all 0.5s ease;
+  line-height: 1.4rem;
+}
+
+.card__container_three:hover span {
+  opacity: 1;
+  visibility: visible;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.card__container,
+.card__container_two,
+.card__container_three {
+  /* float: left; */
+  font-size: small;
+  display: inline-flex;
+}
+
+/* Section one */
+.section {
+  margin-top: 4rem;
+  /* border: 5px solid red; */
+}
+.title {
+  font-family: "Shadows Into Light", cursive;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+}
+.title h3 {
+  font-size: 1.5rem;
+}
+
+.boxes {
+  display: inline-flex;
+  width: 100%;
+  margin-top: 4rem;
+}
+.boxes p,
+.boxestwo p {
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  color: black;
+}
+.spotify {
+  width: 98%;
+}
+
+.section_two {
+  margin-top: 0 auto;
+}
+
+.boxes,
+.boxestwo {
+  display: inline-flex;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.section_three {
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.video {
+  width: 62.5rem;
+  height: 31.25rem;
+  margin: auto;
+}
+
+.footer {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.map {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about {
+  width: 33%;
+  text-align: center;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33%;
+  align-items: center;
+}
+.redes ul {
+  list-style: none;
+  display: flex;
+}
+
+.redes ul li {
+  margin-right: 1.5rem;
+}
+
+.redes ul li:last-of-type {
+  margin-right: 0;
+}
+
+.redes ul li a {
+  text-decoration: none;
+  color: black;
+  text-align: right;
+}
+
+.copy {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 0 auto;
+}
+.copy p {
+  background-color: #393e46;
+  text-align: center;
+}
+
+.lp {
+  width: 150px;
+  height: 150px;
+  display: block;
+}

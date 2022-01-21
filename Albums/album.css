@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: "Poppins", sans-serif;
+  /* font-family: 'Shadows Into Light', cursive; */
+  border: solid black;
+}
+
+header {
+  position: relative;
+  height: 12vh;
+  background-color: black;
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Bebas Neue", cursive;
+}
+
+.menu {
+  color: white;
+  display: flex;
+  /* row */
+  /* flex-direction: row-reverse; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 100px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+.menu ul li {
+  margin-right: 1.5rem;
+}
+
+.menu ul li:last-of-type {
+  margin-right: 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.map {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about {
+  width: 33%;
+  text-align: center;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33%;
+  align-items: center;
+}
+.redes ul {
+  list-style: none;
+  display: flex;
+}
+
+.redes ul li {
+  margin-right: 1.5rem;
+}
+
+.redes ul li:last-of-type {
+  margin-right: 0;
+}
+
+.redes ul li a {
+  text-decoration: none;
+  color: black;
+  text-align: right;
+}
+
+.copy {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 0 auto;
+}
+.copy p {
+  background-color: #393e46;
+  text-align: center;
+}
+
+.lp {
+  width: 150px;
+  height: 150px;
+  display: block;
+}
